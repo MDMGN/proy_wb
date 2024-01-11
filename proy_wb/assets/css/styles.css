@@ -1,0 +1,88 @@
+﻿*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: thin solid #000;
+    padding: 10px;
+    width: min(400px,70%);
+    height: min(480px,70%);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 0 rgba(31, 38, 135, 0.37));
+    p{
+         font-weight: bold;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+.login-container input{
+    width: min(300px,70%);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+.login-container input[type=submit]:focus{
+    border-color: forestgreen;
+}
+    .login-container input[type=submit] {
+        width: 80px;
+        background-color: #dad;
+        transition: transform,opacity .5s ease-in-out;
+        font-weight: 900;
+    &:hover{
+    opacity: .7;
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+}
+
+
+.panelValidator {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+}
+
+.isEmailValid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: thin solid #000;
+    padding: 10px;
+    width: min(400px,70%);
+    height: max(250px,30%);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 0 rgba(255, 255, 255, 0.9));
+    opacity: .5;
+    p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+}
